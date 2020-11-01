@@ -22,6 +22,12 @@ header {
     align-items: center;
     margin-top: 5px;
     margin-bottom: 10px;
+    border-color: black;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
 }
 
 .li_header, a, button {
@@ -81,15 +87,13 @@ button:hover {
     width: 75%;
 	margin: auto;
     overflow: hidden;
-    border-radius: 50px;
 }
 
 .slider .ul_slider {
 	display: flex;
 	padding: 0;
 	width: 300%;
-	
-	animation: cambio 20s infinite alternate linear;
+	animation: cambio 30s infinite alternate linear;
 }
 
 .slider .li_slider {
@@ -99,6 +103,12 @@ button:hover {
 
 .slider .img_slider {
 	width: 100%;
+}
+
+.img_slider {
+    border-radius: 50px;
+    border-color: gold;
+    border-style: solid;
 }
 
 @keyframes cambio {
