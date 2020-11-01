@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1rem;
+    /* Sticky footer */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.li_header, a, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 5px;
+    width: 90px;
+    height: 90px;
+}
+
+.nav_links .li_header {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links .li_header .a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links .li_header a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 8px 15px;
+    margin-right: 15px;
+    background-color: #F0F0B9;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #e8e861;
+}
+
+@media (max-width: 700px){
+    header{
+            /* Reverse the axis of the header, making it vertical. */ 
+            flex-direction: row;
+            /* Align items to the begining (the left) of the header. */
+            align-items: flex-start;
+    }
+}
+
+/* Slider styles*/
+.slider {
+    width: 75%;
+	margin: auto;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.slider .ul_slider {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider .li_slider {
+	width: 100%;
+	list-style: none;
+}
+
+.slider .img_slider {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/* Footer styles */
+
+footer {
+    width: 100%;
+    background: #111;
+    margin-top: 1.5rem;
+    /* Sticky footer */
+    flex-shrink: 0;
+    color: white;
+}
+
+.footer_links {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.footer_links .li_footer {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.25rem 0.75rem;
+}
+
+.footer_links .a_footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_links .a_footer:hover {
+    text-decoration: underline;
+}

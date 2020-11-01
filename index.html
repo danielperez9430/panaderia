@@ -4,36 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio</title>
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/pagina_panaderia.css">
 </head>
 
 <body>
-  <div id="inicio">
-    <header>
-      <nav class="nav_menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="panaderia.html">Panadería</a></li>
-          <li><a href="pasteleria.html">Pastelería</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="login.html">Login/Registro</a></li>
-        </ul>
-      </nav>
-    </header>
 
-  </div>
+  <header>
+    <img class="logo "src="images/logo.svg" alt="logo"/>
+    <nav>
+      <ul class="nav_links">
+        <li class="li_header"><a href="index.html">Inicio</a></li>
+        <li class="li_header"><a href="panaderia.html">Panadería</a></li>
+        <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+        <li class="li_header"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn_login" href="login.html"><button>Login/Registro</button></a>
+  </header>
+
+
   <div class="slider">
-    <ul>
-      <li>
-        <img src="images/banner-3.webp">
+    <ul class="ul_slider">
+      <li class="li_slider">
+        <img src="images/banner-3.webp" class="img_slider"/>
       </li>
-      <li>
-        <img src="images/banner-2.webp">
+      <li class="li_slider">
+        <img src="images/banner-2.webp" class="img_slider"/>
       </li>
-      <li>
-        <img src="images/banner-1.webp">
+      <li class="li_slider">
+        <img src="images/banner-1.webp" class="img_slider"/>
       </li>
     </ul>
   </div>
@@ -45,14 +47,14 @@
   </div>
 
   <footer>
-    <ul>
-      <li><a href="politica_privacidad.html">Política de privacidad</a></li>
-      <li><a href="politica_de_cookies.html">Política de Cookies</a></li>
-      <li><a href="politica_de_devoluciones.html">Política de devoluciones</a></li>
-      <li>&copy; Panaderías M.L. 2020</li>
+    <ul class="footer_links">
+      <li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
+      <li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
+      <li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a></li>
+      <li class="li_footer">&copy; Panaderías M.L. 2020</li>
     </ul>
   </footer>
-  
+
 </body>
 
 </html>
