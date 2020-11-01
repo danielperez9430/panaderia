@@ -125,7 +125,59 @@ button:hover {
 
 /*Pagina panaderia*/
 
+.banner_bread {
+    display: flex;
+    align-self: center;
+}
 
+.imagenes_panes {
+    display: flex;
+    flex-direction:row;
+	flex-wrap:wrap;
+    justify-content:space-between;
+    border: 0px solid black;
+    
+}
+
+.imagen_1 {
+    margin-top: 50px;
+    margin-left: 400px;
+
+}
+
+.imagen_2 {
+    margin-top: 50px;
+    margin-right: 400px;
+}
+    
+.texto_negrita1 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+    
+.texto_negrita2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+
+      
+.texto_negrita3 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    
+  }
+
+
+      
+.texto_negrita4 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    
+  }
 
 
 
