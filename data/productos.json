@@ -3,35 +3,35 @@
         {
             "id": 0,
             "productName": "Bollo de Pan Artesano",
-            "description": "Fabricado con ingredientes de m·xima calidad, y en horno de leÒa",
+            "description": "Fabricado con ingredientes de m√°xima calidad, y en horno de le√±a a fuego lento usando la mejor masa madre del mercado.",
             "price": "0.90",
             "image": "images/imagenes_de_pan/pan_redondo.jpg"
         },
         {
             "id" : 1,
             "productName": "Barras de Pan de ayer",
-            "description": "Que mejor que unas tostadas por la maÒana con el pan sobrante del dÌa anterior",
-            "price": "1.2",
+            "description": "¬øQu√© mejor que unas tostadas por la ma√±ana con el pan sobrante del d√≠a anterior? Comprando este producto evitas que se desperdicie comida",
+            "price": "0.4",
             "image": "images/imagenes_de_pan/barras_de_pan.jpg"
         },
         {
             "id" : 2,
             "productName": "Pan artesano de Cea",
-            "description": "El mejor pan traÌdo del m·s all·",
+            "description": "Pan con una textura crugiente en su exterior y un interior blando, podemos decir que es el mejor pan tra√≠do desde el m√°s all√°.",
             "price": "1.2",
             "image": "images/imagenes_de_pan/pan_de_cea.jpg"
         },
         {
             "id" : 3,
             "productName": "Pan Integral",
-            "description": "Pan de cereales y centeno, para evitar el estreÒimiento",
+            "description": "Pan de cereales y centeno, para evitar el estre√±imiento. Tiene un alto contenido en fibra y se elabora siguiendo la receta tradicional.",
             "price": "1.2",
             "image": "images/imagenes_de_pan/pan_integral.jpg"
         },
         {
             "id" : 4,
             "productName": "Croissants",
-            "description": "Sabrosos croissants de mantequilla y crujientes",
+            "description": "Sabrosos croissants de mantequilla y crujientes. Reci√©n hordeados todas las ma√±anas para el disfrute de todos nuestros clientes.",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/croissants.jpg"
         },
@@ -45,7 +45,7 @@
         {
             "id" : 6,
             "productName": "Pastelitos Tuga",
-            "description": "La mejor replica de pastelitos de belÈn",
+            "description": "La mejor replica de pastelitos de bel√©n",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/pasteles_de_nata.jpg"
         },

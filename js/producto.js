@@ -16,6 +16,7 @@ if (idURL.length === 2) {
         fetch('/data/productos.json')
             .then(response => response.json())
             .then(data => {
+           
                 console.log(data.products[idURL[1]].price);
 
                 if(data.products.length >= idURL[1]) {

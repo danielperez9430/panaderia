@@ -4,6 +4,7 @@
     font-family: "Roboto", sans-serif;
     margin: 0px;
     padding: 0px;
+    flex-grow: 1;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 /* Header styles */
@@ -176,6 +178,7 @@ margin-right: 7%;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
+    
 }
 
 @media (max-width: 740px){
@@ -255,6 +258,18 @@ margin-right: 7%;
     margin-bottom: 30px;
 }
 
+.texto_productos_pasteleria {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.p_producto_name {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    margin-left: 15px;
+}
 @media (max-width: 740px){
     .img_ad_banner_pastry {
         max-width: 100vh;
@@ -297,10 +312,11 @@ margin-right: 7%;
     width: 80%;
     min-height: 300px;
     margin: 0 auto;
+    flex-direction: row;
 }
 
 .flex-container-contact .column {
-    flex: 1;
+    
     padding: 10px;
 }
 
@@ -317,8 +333,16 @@ margin-right: 7%;
     list-style:none;  
 }
 
+@media (max-width: 760px){
+ .flex-container-contact {
+   flex-wrap: wrap;
+ }
+ .ul_contact { 
+     align-self: center;
+ }
+}
 
-/*Login*/
+/* Login Page*/
 
 .form {
     display: inline-block;
@@ -330,9 +354,7 @@ margin-right: 7%;
     margin-right: auto;
     width: 500px;
     height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    
+    border-radius: 10px;    
 }
 
 .tab-content {
@@ -342,13 +364,14 @@ margin-right: 7%;
   border: 0px solid rgb(128, 0, 0);
   margin: auto;
   height: 400px;
-
+  
 }
 
 .field-wrap{
     padding: 5px;
     word-wrap: break-word;
     justify-content: center;
+    
 }
 
 #login {
@@ -361,6 +384,7 @@ margin-right: 7%;
 
 #login button {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .titulo_login {
@@ -390,7 +414,7 @@ margin-right: 7%;
 }
 
 
-/* Producto Page Styles*/
+/* Producto Page Styles */
 
 .producto {
     border-radius: 30px;
@@ -479,9 +503,9 @@ footer {
     width: 100%;
     background: #111;
     margin-top: 1.5rem;
-    /* Sticky footer */
-    flex-shrink: 0;
+    bottom: 0;
     color: white;
+    max-height: 100px;
 }
 
 .footer_links {
