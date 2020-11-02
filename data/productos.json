@@ -1,18 +1,60 @@
 {
     "products": [
         {
-            "id": 1,
-            "productName": "Pan de molde",
+            "id": 0,
+            "productName": "Bollo de Pan Artesano",
             "description": "",
-            "price": "0.90€",
-            "image": "/images/banner1.webp"
+            "price": "0.90",
+            "image": "images/imagenes_de_pan/pan_redondo.jpg"
+        },
+        {
+            "id" : 1,
+            "productName": "Barras de Pan de ayer",
+            "description": "",
+            "price": "1.2",
+            "image": "images/imagenes_de_pan/barras_de_pan.jpg"
         },
         {
             "id" : 2,
-            "productName": "Pan artenaso",
+            "productName": "Pan artesano de Cea",
             "description": "",
-            "price": "1.2€",
-            "image": "/images/banner2.webp"
+            "price": "1.2",
+            "image": "images/imagenes_de_pan/pan_de_cea.jpg"
+        },
+        {
+            "id" : 3,
+            "productName": "Pan Integral",
+            "description": "",
+            "price": "1.2",
+            "image": "images/imagenes_de_pan/pan_integral.jpg"
+        },
+        {
+            "id" : 4,
+            "productName": "Croissants",
+            "description": "",
+            "price": "1.2",
+            "image": "images/imagenes_de_pasteles/croissants.jpg"
+        },
+        {
+            "id" : 5,
+            "productName": "Brownies extra de chocolate",
+            "description": "",
+            "price": "1.2",
+            "image": "images/imagenes_de_pasteles/brownie-de-chocolate.jpg"
+        },
+        {
+            "id" : 6,
+            "productName": "Pastelitos Tuga",
+            "description": "",
+            "price": "1.2",
+            "image": "images/imagenes_de_pasteles/pasteles_de_nata.jpg"
+        },
+        {
+            "id" : 7,
+            "productName": "Tarta de la abuela original",
+            "description": "",
+            "price": "1.2",
+            "image": "images/imagenes_de_pasteles/tarta_abuela.jpg"
         }
     ]
 }
