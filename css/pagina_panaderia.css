@@ -7,7 +7,6 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     min-height: 100vh;
     display: flex;
@@ -384,7 +383,87 @@ margin-right: 7%;
 }
 
 
+/* Producto Page Styles*/
+.producto {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: gold;
+    margin: 10px 10px 40px 10px;
+    display: flex;
+    justify-content: cen;
+    align-items: center;
+}
 
+.productos_relacionados {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: gold;
+    margin: 10px 30px 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_rel_producto {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+   border-color: goldenrod;
+}
+.img_producto {
+max-width: 300px;
+max-height: 300px;
+/*Arriba, derecha, abajo, izquierda*/
+margin: 10px 10px 10px 25px;
+border-style: outset;
+border-color: gold;
+}
+
+.btn_comprar {
+    border-style: groove;
+    border-radius: unset;
+    margin-top: 20px;
+}
+
+.p_producto {
+/*Arriba, derecha, abajo, izquierda*/
+    margin: 10px 0px 10px 20px ;
+}
+
+.div_precio {
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.h2_producto {
+    margin-left: 10px;
+}
+
+/* Cookies / Privacy /... Page Syles */
+
+.texto_politica {
+padding-left: 5%;
+padding-right: 5%;
+}
+.p_politica  {
+    text-align: justify;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lista {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
 
 /* Footer styles */
 
