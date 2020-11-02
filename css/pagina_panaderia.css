@@ -7,9 +7,9 @@
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    /* Sticky footer */
-    min-height: 100vh;
+    min-height: 100vh; /* Remove? */
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +32,7 @@ header {
 
 .li_header, a, button {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 16px;
     font-size: 16px;
     color: black;
     text-decoration: none;
@@ -83,6 +83,7 @@ button:hover {
 }
 
 /* Slider styles*/
+
 .slider {
     width: 75%;
 	margin: auto;
@@ -181,35 +182,45 @@ button:hover {
 
 
 
+/* Contact Webpage Styles */
+
+#leafletMap {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.icono_contacto {
+    width: 1.5em;
+    height: 1em;
+    align-items: flex-start;
+}
 
 
+.flex-container-contact {
+    display: flex;
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+}
 
+.flex-container-contact .column {
+    flex: 1;
+    padding: 10px;
+}
 
+.ul_contact {
+    margin-top: 40px;
+    text-align: justify;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.li_contact {  
+    font-weight: 16px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    list-style:none;  
+}
 
 
 /* Footer styles */
