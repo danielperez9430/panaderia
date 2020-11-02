@@ -5,22 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/pagina_panaderia.css">
 </head>
 
 <body>
-    <div id="inicio">
-        <header>
-            <nav class="nav_menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="panaderia.html">Panadería</a></li>
-                    <li><a href="pasteleria.html">Pastelería</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="login.html">Login/Registro</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header>
+        <img class="logo "src="images/logo.svg" alt="logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li class="li_header"><a href="index.html">Inicio</a></li>
+            <li class="li_header"><a href="panaderia.html">Panadería</a></li>
+            <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+            <li class="li_header"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <a class="btn_login" href="login.html"><button>Login/Registro</button></a>
+      </header>
+      <div class="form">
+        
+        <div class="tab-content">
+          <div id="signup">   
+            <h1>Registrarse</h1>
+            
+            <form action="/" method="post">
+            
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  Nombre<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+          
+              <div class="field-wrap">
+                <label>
+                  Apellidos<span class="req">*</span>
+                </label>
+                <input type="text"required autocomplete="off"/>
+              </div>
+            </div>
+  
+            <div class="field-wrap">
+              <label>
+                Correo electronico<span class="req">*</span>
+              </label>
+              <input type="email"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label>
+                Contraseña<span class="req">*</span>
+              </label>
+              <input type="password"required autocomplete="off"/>
+            </div>
+            
+            <button type="submit" class="button button-block"/>Registrarme</button>
+            
+            </form>
+  
+          </div>
+          
+          <div id="login">   
+            <h1>Bienvenid@!</h1>
+            
+            <form action="/" method="post">
+            
+              <div class="field-wrap">
+              <label>
+                Correo electronico<span class="req">*</span>
+              </label>
+              <input type="email"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label>
+                Contraseña<span class="req">*</span>
+              </label>
+              <input type="password"required autocomplete="off"/>
+            </div>
+            
+            <p class="forgot"><a href="#">Olvidastes la contraseña?</a></p>
+            
+            <button class="button button-block"/>Inciar sesión</button>
+            
+            </form>
+  
+          </div>
+          
+        </div><!-- tab-content -->
+        
+  </div> <!-- /form -->
+      
+    
 </body>
 
 </html>

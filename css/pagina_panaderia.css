@@ -55,7 +55,7 @@ header {
 }
 
 .nav_links .li_header a:hover {
-    color: #0088a9;
+    color: #c7ba05;
 }
 
 button {
@@ -317,6 +317,73 @@ margin-right: 7%;
     text-decoration: none;
     list-style:none;  
 }
+
+
+/*Login*/
+
+.form {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    border: 0px solid green;
+    background-color: #e7d9b28f;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  border: 0px solid rgb(128, 0, 0);
+  margin: auto;
+  height: 400px;
+}
+ .field-wrap{
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+#login {
+    margin-top: 50px;
+}
+
+#signup button {
+    margin-top: 20px;
+}
+
+#login button {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 740px){
+    .form {
+        max-width: 100vh;
+       
+    }
+}
+
+@media (max-width: 584px){
+    .form {
+        max-width: 80vh;
+        
+    }
+}
+
+@media (max-width: 430px){
+    body {
+        resize: none;
+    }
+    
+}
+
+
 
 
 /* Footer styles */
