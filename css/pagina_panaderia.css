@@ -200,6 +200,83 @@ margin-right: 7%;
     
 }
 
+/*Pagina pasteleria*/
+
+.banner_pastry {
+    display: flex;
+    align-self: center;
+    border-radius: 50px;
+}
+
+.img_ad_banner_pastry {
+    border-radius: 30px;
+    border-color: gold;
+    border-style: solid;
+}
+
+.img_ad_banner_pastry:hover {
+    border-color: goldenrod;
+}
+
+.imagenes_pasteles {
+    display: flex;
+    flex-direction:row;
+	flex-wrap:wrap;
+    justify-content: center;    
+}
+
+.img_pasteleria {
+border-radius: 50px;
+border-color: gold;
+border-style: solid;
+max-width: 400px;
+max-height: 400px;
+
+}
+
+.imagen_1_pasteles {
+position: 1;
+align-items: center;
+margin-top: 20px;
+margin-left: 7%;
+margin-right: 5%;
+}
+
+.imagen_2_pasteles {
+position: 2;
+align-items: center;
+margin-top: 20px;
+margin-left: 5%;
+margin-right: 7%;
+}
+    
+.texto_productos_pasteleria {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 740px){
+    .img_ad_banner_pastry {
+        max-width: 100vh;
+       
+    }
+}
+
+@media (max-width: 584px){
+    .img_ad_banner_pastry {
+        max-width: 80vh;
+        
+    }
+}
+
+@media (max-width: 430px){
+    body {
+        resize: none;
+    }
+    
+}
+
 
 /* Contact Webpage Styles */
 
