@@ -342,10 +342,13 @@ margin-right: 7%;
   border: 0px solid rgb(128, 0, 0);
   margin: auto;
   height: 400px;
+
 }
- .field-wrap{
+
+.field-wrap{
     padding: 5px;
     word-wrap: break-word;
+    justify-content: center;
 }
 
 #login {
@@ -384,6 +387,7 @@ margin-right: 7%;
 
 
 /* Producto Page Styles*/
+
 .producto {
     border-radius: 30px;
     border-style: solid;
@@ -416,13 +420,13 @@ margin-right: 7%;
     border-style: solid;
    border-color: goldenrod;
 }
+
 .img_producto {
-max-width: 300px;
-max-height: 300px;
-/*Arriba, derecha, abajo, izquierda*/
-margin: 10px 10px 10px 25px;
-border-style: outset;
-border-color: gold;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px 10px 10px 25px;
+    border-style: outset;
+    border-color: gold;
 }
 
 .btn_comprar {
@@ -432,7 +436,6 @@ border-color: gold;
 }
 
 .p_producto {
-/*Arriba, derecha, abajo, izquierda*/
     margin: 10px 0px 10px 20px ;
 }
 
@@ -451,6 +454,7 @@ border-color: gold;
 padding-left: 5%;
 padding-right: 5%;
 }
+
 .p_politica  {
     text-align: justify;
     margin-left: 10px;

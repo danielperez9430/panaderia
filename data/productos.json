@@ -1,0 +1,18 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productName": "Pan de molde",
+            "description": "",
+            "price": "0.90€",
+            "image": "/images/banner1.webp"
+        },
+        {
+            "id" : 2,
+            "productName": "Pan artenaso",
+            "description": "",
+            "price": "1.2€",
+            "image": "/images/banner2.webp"
+        }
+    ]
+}
