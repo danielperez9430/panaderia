@@ -3,56 +3,56 @@
         {
             "id": 0,
             "productName": "Bollo de Pan Artesano",
-            "description": "",
+            "description": "Fabricado con ingredientes de máxima calidad, y en horno de leña",
             "price": "0.90",
             "image": "images/imagenes_de_pan/pan_redondo.jpg"
         },
         {
             "id" : 1,
             "productName": "Barras de Pan de ayer",
-            "description": "",
+            "description": "Que mejor que unas tostadas por la mañana con el pan sobrante del día anterior",
             "price": "1.2",
             "image": "images/imagenes_de_pan/barras_de_pan.jpg"
         },
         {
             "id" : 2,
             "productName": "Pan artesano de Cea",
-            "description": "",
+            "description": "El mejor pan traído del más allá",
             "price": "1.2",
             "image": "images/imagenes_de_pan/pan_de_cea.jpg"
         },
         {
             "id" : 3,
             "productName": "Pan Integral",
-            "description": "",
+            "description": "Pan de cereales y centeno, para evitar el estreñimiento",
             "price": "1.2",
             "image": "images/imagenes_de_pan/pan_integral.jpg"
         },
         {
             "id" : 4,
             "productName": "Croissants",
-            "description": "",
+            "description": "Sabrosos croissants de mantequilla y crujientes",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/croissants.jpg"
         },
         {
             "id" : 5,
             "productName": "Brownies extra de chocolate",
-            "description": "",
+            "description": "Receta especial de la casa, con chocolate belga y nueces",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/brownie-de-chocolate.jpg"
         },
         {
             "id" : 6,
             "productName": "Pastelitos Tuga",
-            "description": "",
+            "description": "La mejor replica de pastelitos de belén",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/pasteles_de_nata.jpg"
         },
         {
             "id" : 7,
             "productName": "Tarta de la abuela original",
-            "description": "",
+            "description": "La preferida de todos y todas, con galletas de verdad y chocolate deluxe",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/tarta_abuela.jpg"
         }
