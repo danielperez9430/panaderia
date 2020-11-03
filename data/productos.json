@@ -38,21 +38,21 @@
         {
             "id": 5,
             "productName": "Brownies extra de chocolate",
-            "description": "Receta especial de la casa, con chocolate belga y nueces",
+            "description": "Receta especial de la casa, con chocolate belga y nueces para los verdaderos amantes del chocolate debido principalmente al extra de chocolate que le añadimos.",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/brownie-de-chocolate.jpg"
         },
         {
             "id": 6,
             "productName": "Pastelitos Tuga",
-            "description": "La mejor replica de pastelitos de belén",
+            "description": "La mejor replica de pastelitos de belén. Elaborados con una receta del siglo XIX del Monasterio de los Jerónimos que esta situado en Belem (Lisboa).",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/pasteles_de_nata.jpg"
         },
         {
             "id": 7,
             "productName": "Tarta de la abuela original",
-            "description": "La preferida de todos y todas, con galletas de verdad y chocolate deluxe",
+            "description": "La preferida de todos y todas, con galletas de verdad y chocolate de una calidad deluxe. Este postre se hace diaremente para garantizar la frescura del mismo.",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/tarta_abuela.jpg"
         },
@@ -73,7 +73,7 @@
         {
             "id": 10,
             "productName": "Pan sin glutén",
-            "description": "El pan de toda la vida, pero sin glutén y manteniedo el sabor del pan artesano de toda la vida.",
+            "description": "El pan de toda la vida, pero sin glutén y manteniedo el sabor del pan artesano de toda la vida. Pan ideal para celíacos debido a que no lleva glutén.",
             "price": "1.5",
             "image": "images/imagenes_de_pan/pan_sin_gluten.jpg"
         },
