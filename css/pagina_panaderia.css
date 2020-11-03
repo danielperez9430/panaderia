@@ -101,10 +101,7 @@ button:hover {
     header, nav ul {
       flex-direction: column;
     }
-    button {
-        display: none;
-    }
-  }
+}
   
 /* Slider styles*/
 
@@ -403,7 +400,7 @@ margin-right: 7%;
 .formContainer {
     margin-top: 70px;
     border-radius: 10px;    
-    height: calc(100vh - 100px);
+    height: calc(85vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,7 +409,8 @@ margin-right: 7%;
 }
 
 .form { 
-    border: 0px solid green;
+    border: 1px solid gold;
+    border-radius: 50px;
     background-color: #e7d9b28f;
     margin: auto;
     width: 500px;
@@ -422,7 +420,6 @@ margin-right: 7%;
 .tab-form {
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
     border: 1px solid rgb(128, 0, 0);   
   }
 
@@ -461,7 +458,7 @@ input {
 }
 
 .titulo_login {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -506,16 +503,18 @@ input {
     border-color: gold;
     margin: 10px 10px 40px 10px;
     display: flex;
-    justify-content: cen;
     align-items: center;
     margin-top: 100px;
+    justify-content: space-between;
 }
 
 .productos_relacionados {
     border-radius: 30px;
     border-style: solid;
     border-color: gold;
-    margin: 10px 100px 40px 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -531,7 +530,7 @@ input {
     margin-top: 10px;
     margin-bottom: 10px;
     border-style: solid;
-   border-color: goldenrod;
+    border-color: goldenrod;
 }
 
 .img_producto {
@@ -554,19 +553,38 @@ input {
 
 .div_producto_info {
 position: relative;
-
 }
+
 .div_precio {
     margin-right: 40px;
     margin-left: 20px;
-    position: absolute;
-    right: 0;
+    position: relative;
+}
+
+.precio_producto {
+    font-weight: bold;
 }
 
 .h2_producto {
     margin-left: 10px;
 }
 
+
+@media screen and (max-width:700px) {
+  
+    .producto {
+      flex-direction: column;
+      margin-top: 100px;
+    }
+
+    .img_producto {
+        margin-top: 20px;
+    }
+    .div_precio {
+        margin-bottom: 15px;
+    }
+
+  }
 /* Cookies / Privacy /... Page Syles */
 
 .texto_politica {
