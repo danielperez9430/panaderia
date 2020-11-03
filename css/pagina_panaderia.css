@@ -402,14 +402,34 @@ margin-right: 7%;
 }
 
 .form {
-    display: inline-block;
-    text-align: center;
+
+    
     border: 0px solid green;
     background-color: #e7d9b28f;
-    margin-left: auto;
-    margin-right: auto;
+ 
     width: 500px;
     height: 550px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    margin-left: 10%;
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-top: 9px;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+    margin-left: 10px;
 }
 
 .tab-content {
@@ -420,13 +440,6 @@ margin-right: 7%;
   margin: auto;
   height: 400px;
   
-}
-
-.field-wrap{
-    padding: 5px;
-    word-wrap: break-word;
-    justify-content: center;
-    
 }
 
 #login {
@@ -443,8 +456,19 @@ margin-right: 7%;
 }
 
 .titulo_login {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forgot {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.forgot:hover {
+    color: blue;
 }
 
 @media (max-width: 740px){
