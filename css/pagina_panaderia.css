@@ -372,6 +372,12 @@ margin-right: 7%;
     color: black;
     text-decoration: none;
     list-style:none;  
+    margin-bottom: 8px;
+}
+
+.horarios {
+ margin-top: 9px;
+ margin-left: 25px;
 }
 
 @media (max-width: 760px){
@@ -401,15 +407,20 @@ margin-right: 7%;
     margin-bottom: 100px;
 }
 
-.form {
-
-    
+.form { 
     border: 0px solid green;
     background-color: #e7d9b28f;
- 
+    margin: auto;
     width: 500px;
-    height: 550px;
+    height: 500px;
 }
+
+.tab-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    border: 1px solid rgb(128, 0, 0);   
+  }
 
 label {
     display: inline-block;
@@ -422,7 +433,7 @@ label {
     margin-top: 9px;
 }
 
-button {
+#btn_login_register {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -430,16 +441,6 @@ button {
 
 input {
     margin-left: 10px;
-}
-
-.tab-content {
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-  border: 0px solid rgb(128, 0, 0);
-  margin: auto;
-  height: 400px;
-  
 }
 
 #login {
@@ -596,7 +597,7 @@ footer {
     bottom: 0;
     color: white;
     max-height: 100px;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     height: 50px;
     z-index: 50;
@@ -608,6 +609,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #111;
 }
 
 .footer_links .li_footer {
@@ -624,3 +626,14 @@ footer {
 .footer_links .a_footer:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width:700px) {
+  
+    footer {
+        height: auto;
+    }
+    .footer_links {
+      flex-direction: column;
+    }
+
+  }
