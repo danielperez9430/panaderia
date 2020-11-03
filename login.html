@@ -2,100 +2,115 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/pagina_panaderia.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+  <!-- Estilos página-->
+  <link rel="stylesheet" href="css/pagina_panaderia.css">
+  <!-- Iconos Font Awesome--->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"/></a>
-        <nav>
-          <ul class="nav_links">
-            <li class="li_header"><a href="index.html">Inicio</a></li>
-            <li class="li_header"><a href="panaderia.html">Panadería</a></li>
-            <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
-            <li class="li_header"><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <a class="btn_login" href="login.html"><button class="pag_actual">Login/Registro</button></a>
-      </header>
+	<header>
+		<i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+		<a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
 
-	  <div class="formContainer">
-		<div class="form">       
+		<ul class="nav_links">
+			<li class="li_header"><a href="index.html" class="pag_actual">Inicio</a></li>
+			<li class="li_header"><a href="panaderia.html">Panadería</a></li>
+			<li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+			<li class="li_header"><a href="contacto.html">Contacto</a></li>
+		</ul>
+
+		<a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+	</header>
+
+	<div class="hambMenu" id="hambMenu">
+		<a class="itemMenu" href="index.html">Inicio</a>
+		<a class="itemMenu" href="panaderia.html">Panaderia</a>
+		<a class="itemMenu" href="pasteleria.html">Pasteleria</a>
+		<a class="itemMenu" href="contacto.html">Contacto</a>
+	</div>
+
+	<div class="formContainer">
+		<div class="form">
 			<div class="tab-content">
-			  <div id="signup">   
-	
-				<h1 class="titulo_login">Registrarse</h1>
-	
-				<form>
-				<div class="top-row">
-				  <div class="form-group">
-					<label>Nombre: </label>
-					<input type="text" name="nombre" required autocomplete="off" />
-				  </div>
-			  
-				  <div class="form-group">
-					<label>Apellidos: </label>
-					<input type="text" name="apelliidos" required autocomplete="off"/>
-				  </div>
+				<div id="signup">
+
+					<h1 class="titulo_login">Registrarse</h1>
+
+					<form>
+						<div class="top-row">
+							<div class="form-group">
+								<label>Nombre: </label>
+								<input type="text" name="nombre" required autocomplete="off" />
+							</div>
+
+							<div class="form-group">
+								<label>Apellidos: </label>
+								<input type="text" name="apelliidos" required autocomplete="off" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>Email: </span>
+							</label>
+							<input type="email" name="correo" required autocomplete="off" />
+						</div>
+
+						<div class="form-group">
+							<label>Pass:</label>
+							<input type="password" name="pass" required autocomplete="off" />
+						</div>
+
+						<button id="btn_login_register" type="submit" class="button button-block" />Registrarme</button>
+
+					</form>
+
 				</div>
-	  
-				<div class="form-group">
-				  <label>Email: </span>
-				  </label>
-				  <input type="email" name="correo" required autocomplete="off"/>
+
+				<div id="login">
+					<h1 class="titulo_login">Bienvenid@!</h1>
+
+					<form action="/" method="post">
+
+						<div class="form-group">
+							<label>Email: </label>
+							<input type="email" name="correo" required autocomplete="off" />
+						</div>
+
+						<div class="form-group">
+							<label>Pass: </label>
+							<input type="password" name="pass" required autocomplete="off" />
+						</div>
+
+						<p class="forgot"><a href="#">Olvidastes la contraseña?</a></p>
+
+						<button id="btn_login_register" class="button button-block" />Inciar sesión</button>
+
+					</form>
+
 				</div>
-				
-				<div class="form-group">
-				  <label>Pass:</label>
-				  <input type="password" name="pass" required autocomplete="off"/>
-				</div>
-				
-				<button id="btn_login_register" type="submit" class="button button-block"/>Registrarme</button>
-				
-				</form>
-	  
-			  </div>
-			  
-			  <div id="login">   
-				<h1 class="titulo_login">Bienvenid@!</h1>
-				
-				<form action="/" method="post">
-				
-				  <div class="form-group">
-				  <label>Email: </label>
-				  <input type="email" name="correo" required autocomplete="off"/>
-				</div>
-				
-				<div class="form-group">
-				  <label>Pass: </label>
-				  <input type="password" name="pass"  required autocomplete="off"/>
-				</div>
-				
-				<p class="forgot"><a href="#">Olvidastes la contraseña?</a></p>
-				
-				<button id="btn_login_register" class="button button-block"/>Inciar sesión</button>
-				
-				</form>
-	  
-			  </div>
-			  
+
 			</div><!-- tab-content -->
-			
-	  	</div>
-	  </div>
-       <!-- /form -->
-      
-  <footer>
-    <ul class="footer_links">
-      <li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
-      <li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
-      <li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a></li>
-      <li class="li_footer">&copy; Panaderías M.L. 2020</li>
-    </ul>
-  </footer>
+
+		</div>
+	</div>
+	<!-- /form -->
+
+	<footer>
+		<ul class="footer_links">
+			<li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
+			<li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
+			<li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a>
+			</li>
+			<li class="li_footer">&copy; Panaderías M.L. 2020</li>
+		</ul>
+	</footer>
+
+	<script src="js/responsive_header.js"></script>
+	
 </body>
 
 </html>

@@ -4,7 +4,6 @@
     font-family: "Roboto", sans-serif;
     margin: 0px;
     padding: 0px;
-    /* flex-grow: 1; */
 }
 
 body {
@@ -32,11 +31,10 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 50;
+    z-index: 100;
 }
 
-.li_header, a, button {
-    font-family: "Roboto", sans-serif;
+.li_header {
     font-size: 16px;
     color: black;
     text-decoration: none;
@@ -52,14 +50,68 @@ header {
 .nav_links .li_header {
     display: inline-block;
     padding: 0px 20px;
+    color: black;
+    text-decoration: none;
 }
 
-.nav_links .li_header .a {
-    transition: all 0.3s ease 0s;
+.nav_links .li_header a {
+    color: black;
+    text-decoration: none;
 }
 
-.nav_links .li_header a:hover {
-    color: #c7ba05;
+#hambButton {
+    display: none;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+@media (max-width: 750px) {
+    #hambButton {
+        display: initial;
+    }
+
+    .nav_links {
+        display: none;
+    }
+}
+
+.hambMenu {
+    position: fixed;
+    top: -180px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 80;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.displayHambMenu {
+    top: 70px;
+}
+
+.itemMenu {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.itemMenu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.itemMenu:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn_login {
+    margin-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
 }
 
 .texto_index {
@@ -94,13 +146,6 @@ button:hover {
 
 .pag_actual {
     font-weight: bold;
-}
-
-@media screen and (max-width:700px) {
-  
-    header, nav ul {
-      flex-direction: column;
-    }
 }
   
 /* Slider styles*/
@@ -355,7 +400,7 @@ margin-right: 7%;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 3vh;
+    margin-top: 40px;
     height: calc(60vh - 100px);
 }
 
@@ -400,7 +445,7 @@ margin-right: 7%;
 .formContainer {
     margin-top: 70px;
     border-radius: 10px;    
-    height: calc(85vh - 100px);
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,6 +465,7 @@ margin-right: 7%;
 .tab-form {
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
     border: 1px solid rgb(128, 0, 0);   
   }
 
@@ -458,7 +504,7 @@ input {
 }
 
 .titulo_login {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -581,7 +627,7 @@ position: relative;
         margin-top: 20px;
     }
     .div_precio {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
   }

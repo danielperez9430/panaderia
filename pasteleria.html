@@ -5,65 +5,86 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pastelería</title>
-	<link rel="stylesheet" href="css/pagina_panaderia.css">
+  <!-- Estilos página-->
+  <link rel="stylesheet" href="css/pagina_panaderia.css">
+  <!-- Iconos Font Awesome--->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
 
 	<header>
-		<a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"/></a>
-		<nav>
+		<i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+		<a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+
 		<ul class="nav_links">
-			<li class="li_header"><a href="index.html">Inicio</a></li>
+			<li class="li_header"><a href="index.html" class="pag_actual">Inicio</a></li>
 			<li class="li_header"><a href="panaderia.html">Panadería</a></li>
-			<li class="li_header"><a href="pasteleria.html" class="pag_actual">Pastelería</a></li>
+			<li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
 			<li class="li_header"><a href="contacto.html">Contacto</a></li>
 		</ul>
-		</nav>
-		<a class="btn_login" href="login.html"><button>Login/Registro</button></a>
+
+		<a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
 	</header>
+
+	<div class="hambMenu" id="hambMenu">
+		<a class="itemMenu" href="index.html">Inicio</a>
+		<a class="itemMenu" href="panaderia.html">Panaderia</a>
+		<a class="itemMenu" href="pasteleria.html">Pasteleria</a>
+		<a class="itemMenu" href="contacto.html">Contacto</a>
+	</div>
 
 	<div class="banner_pastry">
 		<img src="images/ad/ad_black_friday_animated.gif" class="img_ad_banner_pastry" alt="ofertas_de_pasteles" />
 	</div>
 
-  	<div class="productsContainer">
+	<div class="productsContainer">
 		<div class="productContainer">
-			<a href="producto.html?id=4"><img src="images/imagenes_de_pasteles/croissants.jpg" class="productPicture" alt="ofertas_de_croissants"/></a>
+			<a href="producto.html?id=4"><img src="images/imagenes_de_pasteles/croissants.jpg" class="productPicture"
+					alt="ofertas_de_croissants" /></a>
 			<div class="productText"><b>Croissants</b></div>
 		</div>
 
 		<div class="productContainer">
-			<a href="producto.html?id=5"><img src="images/imagenes_de_pasteles/brownie-de-chocolate.jpg" class="productPicture" alt="ofertas_de_brownies"/></a>
+			<a href="producto.html?id=5"><img src="images/imagenes_de_pasteles/brownie-de-chocolate.jpg"
+					class="productPicture" alt="ofertas_de_brownies" /></a>
 			<div class="productText"><b>Brownies extra de chocolate</b></div>
 		</div>
 
 		<div class="productContainer">
-			<a href="producto.html?id=6"><img src="images/imagenes_de_pasteles/pasteles_de_nata.jpg" class="productPicture" alt="ofertas_de_pasteles_de_nata"></a>
+			<a href="producto.html?id=6"><img src="images/imagenes_de_pasteles/pasteles_de_nata.jpg"
+					class="productPicture" alt="ofertas_de_pasteles_de_nata"></a>
 			<div class="productText"><b>Pastelitos Tuga</b></div>
 		</div>
 		<div class="productContainer">
-			<a href="producto.html?id=7"><img src="images/imagenes_de_pasteles/tarta_abuela.jpg" class="productPicture" alt="ofertas_tarta_de_la_abuela"></a>
+			<a href="producto.html?id=7"><img src="images/imagenes_de_pasteles/tarta_abuela.jpg" class="productPicture"
+					alt="ofertas_tarta_de_la_abuela"></a>
 			<div class="productText"><b>Tarta de la abuela original</b></div>
 		</div>
 		<div class="productContainer">
-			<a href="producto.html?id=8"><img src="images/imagenes_de_pasteles/tarta-san-marcos.jpg" class="productPicture" alt="ofertas_tarta_de_la_abuela"></a>
+			<a href="producto.html?id=8"><img src="images/imagenes_de_pasteles/tarta-san-marcos.jpg"
+					class="productPicture" alt="ofertas_tarta_de_la_abuela"></a>
 			<div class="productText"><b>Tarta de San Marcos</b></div>
-		</div>		
+		</div>
 		<div class="productContainer">
-			<a href="producto.html?id=9"><img src="images/imagenes_de_pasteles/bizcocho-chocolate.jpg" class="productPicture" alt="ofertas_tarta_de_la_abuela"></a>
+			<a href="producto.html?id=9"><img src="images/imagenes_de_pasteles/bizcocho-chocolate.jpg"
+					class="productPicture" alt="ofertas_tarta_de_la_abuela"></a>
 			<div class="productText"><b>Bizcocho de Chocolate</b></div>
-		</div>	
+		</div>
 	</div>
 
 	<footer>
 		<ul class="footer_links">
-		<li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
-		<li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
-		<li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a></li>
-		<li class="li_footer">&copy; Panaderías M.L. 2020</li>
+			<li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
+			<li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
+			<li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a>
+			</li>
+			<li class="li_footer">&copy; Panaderías M.L. 2020</li>
 		</ul>
 	</footer>
+
+	<script src="js/responsive_header.js"></script>
+
 </body>
 
 </html>

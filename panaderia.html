@@ -2,67 +2,86 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería</title>
-    <link rel="stylesheet" href="css/pagina_panaderia.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería</title>
+  <!-- Estilos página-->
+  <link rel="stylesheet" href="css/pagina_panaderia.css">
+  <!-- Iconos Font Awesome--->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
-      <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"/></a>
-        <nav>
-          <ul class="nav_links">
-            <li class="li_header"><a href="index.html">Inicio</a></li>
-            <li class="li_header"><a href="panaderia.html" class="pag_actual">Panadería</a></li>
-            <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
-            <li class="li_header"><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <a class="btn_login" href="login.html"><button>Login/Registro</button></a>
-      </header>
+  <header>
+    <i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+    <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
 
-    <div class="banner_bread">
-        <a href="contacto.html"><img src="images/ad/ad_navidad_2020.webp" class="img_ad_banner" alt="ofertas_de_pan"/></a>
-    </div>
+    <ul class="nav_links">
+      <li class="li_header"><a href="index.html" class="pag_actual">Inicio</a></li>
+      <li class="li_header"><a href="panaderia.html">Panadería</a></li>
+      <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+      <li class="li_header"><a href="contacto.html">Contacto</a></li>
+    </ul>
 
-    <div class="productsContainer">
-        <div class="productContainer">
-            <a href="producto.html?id=0"><img src="images/imagenes_de_pan/pan_redondo.jpg" class="productPicture" alt="ofertas_de_pan"></a>
-			<div class="productText"><b>Bollo de pan artesanal</b></div>
-		</div>
-		<div class="productContainer">
-            <a href="producto.html?id=1"><img src="images/imagenes_de_pan/barras_de_pan.jpg" class="productPicture" alt="ofertas_de_pan"></a>
-            <div class="productText"><b>Barras de pan de ayer</b></div>
-        </div>
-        <div class="productContainer">
-            <a href="producto.html?id=2"><img src="images/imagenes_de_pan/pan_de_cea.jpg" class="productPicture" alt="ofertas_de_pan"></a>
-			<div class="productText"><b>Pan artesano de Cea</b></div>
-		</div>
-		<div class="productContainer">
-            <a href="producto.html?id=3"><img src="images/imagenes_de_pan/pan_integral.jpg" class="productPicture" alt="ofertas_de_pan"></a>
-            <div class="productText"><b>Pan integral</b></div>
+    <a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+  </header>
+
+  <div class="hambMenu" id="hambMenu">
+    <a class="itemMenu" href="index.html">Inicio</a>
+    <a class="itemMenu" href="panaderia.html">Panaderia</a>
+    <a class="itemMenu" href="pasteleria.html">Pasteleria</a>
+    <a class="itemMenu" href="contacto.html">Contacto</a>
+  </div>
+
+  <div class="banner_bread">
+    <a href="contacto.html"><img src="images/ad/ad_navidad_2020.webp" class="img_ad_banner" alt="ofertas_de_pan" /></a>
+  </div>
+
+  <div class="productsContainer">
+    <div class="productContainer">
+      <a href="producto.html?id=0"><img src="images/imagenes_de_pan/pan_redondo.jpg" class="productPicture"
+          alt="ofertas_de_pan"></a>
+      <div class="productText"><b>Bollo de pan artesanal</b></div>
     </div>
     <div class="productContainer">
-      <a href="producto.html?id=10"><img src="images/imagenes_de_pan/pan_sin_gluten.jpg" class="productPicture" alt="ofertas_de_pan"></a>
+      <a href="producto.html?id=1"><img src="images/imagenes_de_pan/barras_de_pan.jpg" class="productPicture"
+          alt="ofertas_de_pan"></a>
+      <div class="productText"><b>Barras de pan de ayer</b></div>
+    </div>
+    <div class="productContainer">
+      <a href="producto.html?id=2"><img src="images/imagenes_de_pan/pan_de_cea.jpg" class="productPicture"
+          alt="ofertas_de_pan"></a>
+      <div class="productText"><b>Pan artesano de Cea</b></div>
+    </div>
+    <div class="productContainer">
+      <a href="producto.html?id=3"><img src="images/imagenes_de_pan/pan_integral.jpg" class="productPicture"
+          alt="ofertas_de_pan"></a>
+      <div class="productText"><b>Pan integral</b></div>
+    </div>
+    <div class="productContainer">
+      <a href="producto.html?id=10"><img src="images/imagenes_de_pan/pan_sin_gluten.jpg" class="productPicture"
+          alt="ofertas_de_pan"></a>
       <div class="productText"><b>Pan sin glutén</b></div>
-</div>
-<div class="productContainer">
-  <a href="producto.html?id=11"><img src="images/imagenes_de_pan/barra_rustica.png" class="productPicture" alt="ofertas_de_pan"></a>
-  <div class="productText"><b>Barra de Pan Rústico</b></div>
-</div>
-	</div>
-</div>
+    </div>
+    <div class="productContainer">
+      <a href="producto.html?id=11"><img src="images/imagenes_de_pan/barra_rustica.png" class="productPicture"
+          alt="ofertas_de_pan"></a>
+      <div class="productText"><b>Barra de Pan Rústico</b></div>
+    </div>
+  </div>
+  </div>
 
-<footer>
-  <ul class="footer_links">
-    <li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
-    <li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
-    <li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a></li>
-    <li class="li_footer">&copy; Panaderías M.L. 2020</li>
-  </ul>
-</footer>
+  <footer>
+    <ul class="footer_links">
+      <li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
+      <li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
+      <li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a></li>
+      <li class="li_footer">&copy; Panaderías M.L. 2020</li>
+    </ul>
+  </footer>
+
+  <script src="js/responsive_header.js"></script>
 
 </body>
 

@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidad</title>
+    <!-- Estilos página-->
     <link rel="stylesheet" href="css/pagina_panaderia.css">
+    <!-- Iconos Font Awesome--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"/></a>
-        <nav>
-            <ul class="nav_links">
-                <li class="li_header"><a href="index.html">Inicio</a></li>
-                <li class="li_header"><a href="panaderia.html">Panadería</a></li>
-                <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
-                <li class="li_header"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <a class="btn_login" href="login.html"><button>Login/Registro</button></a>
+        <i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+
+        <ul class="nav_links">
+            <li class="li_header"><a href="index.html" class="pag_actual">Inicio</a></li>
+            <li class="li_header"><a href="panaderia.html">Panadería</a></li>
+            <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+            <li class="li_header"><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
     </header>
+
+    <div class="hambMenu" id="hambMenu">
+        <a class="itemMenu" href="index.html">Inicio</a>
+        <a class="itemMenu" href="panaderia.html">Panaderia</a>
+        <a class="itemMenu" href="pasteleria.html">Pasteleria</a>
+        <a class="itemMenu" href="contacto.html">Contacto</a>
+    </div>
 
 
     <div class="texto_politica">
@@ -39,7 +51,8 @@
 
         <h1>Definiciones</h1>
 
-        <p class="p_politica">Entender las implicaciones reales y concretas de un reglamento europeo no siempre es fácil,
+        <p class="p_politica">Entender las implicaciones reales y concretas de un reglamento europeo no siempre es
+            fácil,
             especialmente cuando este consta de 99 artículos, 173 considerandos y numerosas líneas
             directivas destinadas a aclarar su interpretación. Y, sin embargo, es fundamental para evitar
             las consecuencias que podrían derivarse de una interpretación demasiado genérica o
@@ -130,7 +143,7 @@
             “Protección de Datos”. Nosotros atenderemos su petición dentro del plazo máximo de 30 días
             que establece la ley de protección de datos (GDPR) y en el menor tiempo posible.</p>
         <p class="p_politica"><b>Fecha de última revisión:</b> 13/10/2020</p>
-        
+
     </div>
 
     <footer>
@@ -142,6 +155,8 @@
             <li class="li_footer">&copy; Panaderías M.L. 2020</li>
         </ul>
     </footer>
+
+    <script src="js/responsive_header.js"></script>
 
 </body>
 
