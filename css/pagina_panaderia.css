@@ -527,9 +527,15 @@ margin-right: 7%;
     margin: 10px 0px 10px 20px ;
 }
 
+.div_producto_info {
+position: relative;
+
+}
 .div_precio {
     margin-right: 40px;
     margin-left: 20px;
+    position: absolute;
+    right: 0;
 }
 
 .h2_producto {

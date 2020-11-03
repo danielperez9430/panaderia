@@ -55,6 +55,34 @@
             "description": "La preferida de todos y todas, con galletas de verdad y chocolate deluxe",
             "price": "1.2",
             "image": "images/imagenes_de_pasteles/tarta_abuela.jpg"
+        },
+        {
+            "id" : 8,
+            "productName": "Tarta de San Marcos",
+            "description": "Una de las tartas que nunca falta en cumpleaños, reuniones, ... principalmente debido a su textura suave, gusta tanto a niños como a adultos y es uno de los postres que los ves y poco después desaparece.",
+            "price": "2",
+            "image": "images/imagenes_de_pasteles/tarta-san-marcos.jpg"
+        },
+        {
+            "id" : 9,
+            "productName": "Bizcocho de Chocolate",
+            "description": "Uno de los Bizcochos preferido de todos y todas, con una textura muy esponjosa y suave. Usamos chocolate puro 100% para garantizar el mejor sabor del mercado.",
+            "price": "1.5",
+            "image": "images/imagenes_de_pasteles/bizcocho-chocolate.jpg"
+        },
+        {
+            "id" : 10,
+            "productName": "Pan sin glutén",
+            "description": "Uno de los Bizcochos preferido de todos y todas, con una textura muy esponjosa y suave. Usamos chocolate puro 100% para garantizar el mejor sabor del mercado.",
+            "price": "1.5",
+            "image": "images/imagenes_de_pan/pan_sin_gluten.jpg"
+        },
+        {
+            "id" : 11,
+            "productName": "Barra de Pan Rústico",
+            "description": "Uno de los Bizcochos preferido de todos y todas, con una textura muy esponjosa y suave. Usamos chocolate puro 100% para garantizar el mejor sabor del mercado.",
+            "price": "1.5",
+            "image": "images/imagenes_de_pan/barra_rustica.png"
         }
     ]
 }
