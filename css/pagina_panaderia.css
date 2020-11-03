@@ -4,7 +4,7 @@
     font-family: "Roboto", sans-serif;
     margin: 0px;
     padding: 0px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 body {
@@ -21,7 +21,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5px;
     margin-bottom: 10px;
     border-color: black;
     border-style: solid;
@@ -29,6 +28,11 @@ header {
     border-left: none;
     border-right: none;
     border-width: 2px;
+    max-height: 70px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 50;
 }
 
 .li_header, a, button {
@@ -63,6 +67,7 @@ header {
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 70px;
     font-size: 4vh;
     text-align: justify;
 }
@@ -104,6 +109,8 @@ button:hover {
     width: 75%;
 	margin: auto;
     overflow: hidden;
+    margin-top: 70px;
+    padding-top: 20px;
 }
 
 .slider .ul_slider {
@@ -144,10 +151,11 @@ button:hover {
 .banner_bread {
     display: flex;
     align-self: center;  
+    margin-top: 90px;
 }
 
 .img_ad_banner {
-    border-radius: 30px;
+    border-radius: 10px;
     border-color: gold;
     border-style: solid;
 }
@@ -156,20 +164,43 @@ button:hover {
     border-color: goldenrod;
 }
 
-.imagenes_panes {
+.productsContainer {
     display: flex;
     flex-direction:row;
 	flex-wrap:wrap;
     justify-content: center;    
+    margin-top: 5px;
+    margin-bottom: 50px;
+    z-index: 30;
 }
 
-.img_panaderia {
-border-radius: 50px;
-border-color: gold;
-border-style: solid;
-max-width: 400px;
-max-height: 400px;
+.productContainer {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+}
 
+.productContainer:hover {
+    box-shadow: 3px 3px 5px grey;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+.productPicture {
+    border-radius: 10px;
+    border-color: gold;
+    border-style: solid;
+    max-width: 400px;
+    max-height: 400px;
+
+}
+
+.productPageContainer {
+    margin-top: 70px;
+    padding-top: 20px;
 }
 
 .imagen_1 {
@@ -188,10 +219,11 @@ margin-left: 5%;
 margin-right: 7%;
 }
     
-.texto_productos_panaderia {
+.productText {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
     
 }
 
@@ -222,6 +254,7 @@ margin-right: 7%;
     display: flex;
     align-self: center;
     border-radius: 50px;
+    margin-top: 90px;
 }
 
 .img_ad_banner_pastry {
@@ -321,6 +354,11 @@ margin-right: 7%;
     min-height: 300px;
     margin: 0 auto;
     flex-direction: row;
+    margin-top: 50px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
 }
 
 .flex-container-contact .column {
@@ -352,17 +390,26 @@ margin-right: 7%;
 
 /* Login Page*/
 
+.formContainer {
+    margin-top: 70px;
+    border-radius: 10px;    
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .form {
     display: inline-block;
     text-align: center;
-    margin-top: 50px;
     border: 0px solid green;
     background-color: #e7d9b28f;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    height: 500px;
-    border-radius: 10px;    
+    height: 550px;
 }
 
 .tab-content {
@@ -487,8 +534,12 @@ margin-right: 7%;
 /* Cookies / Privacy /... Page Syles */
 
 .texto_politica {
-padding-left: 5%;
-padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 70px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .p_politica  {
@@ -514,11 +565,18 @@ footer {
     bottom: 0;
     color: white;
     max-height: 100px;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    z-index: 50;
 }
 
 .footer_links {
-    padding: 1.25rem;
+    height: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer_links .li_footer {
