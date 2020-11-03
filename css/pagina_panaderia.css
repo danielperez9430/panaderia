@@ -386,6 +386,10 @@ margin-right: 7%;
  .ul_contact { 
      align-self: center;
  }
+
+ #leafletMap {
+     margin-bottom: 90px;
+ }
 }
 
 /* Login Page*/
@@ -479,13 +483,14 @@ margin-right: 7%;
     display: flex;
     justify-content: cen;
     align-items: center;
+    margin-top: 100px;
 }
 
 .productos_relacionados {
     border-radius: 30px;
     border-style: solid;
     border-color: gold;
-    margin: 10px 30px 40px 30px;
+    margin: 10px 100px 40px 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
