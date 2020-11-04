@@ -1,4 +1,13 @@
+/* Opción desde CDN
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*/
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    src: url("/fuentes/Roboto-Regular.ttf");
+    font-weight: 300;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
