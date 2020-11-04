@@ -1,9 +1,9 @@
-// Producto por defecto
+// Declaración del Objeceto producto
 var producto = {
-    nombre: "Magdalenas de chocolate",
-    precio: "10",
-    descripcion: "Lorem adddddddddd adda ad daad adada ad ererereretwerggwgww twrwt  ewwewe ewe e  e e erer ere e er tw  e",
-    image: "/images/banner-1.webp"
+    nombre: "",
+    precio: "",
+    descripcion: "",
+    image: ""
 }
 
 let obtenerUrlActual = window.location;

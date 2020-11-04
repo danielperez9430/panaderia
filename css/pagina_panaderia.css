@@ -202,6 +202,9 @@ button:hover {
     border-radius: 10px;
     border-color: gold;
     border-style: solid;
+    align-self: center;  
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .img_ad_banner:hover {
@@ -274,13 +277,14 @@ margin-right: 7%;
 @media (max-width: 740px){
     .img_ad_banner {
         max-width: 100vh;
-       
+        max-width: 95%;
+  
     }
 }
 
 @media (max-width: 584px){
     .img_ad_banner {
-        max-width: 80vh;
+ 
         
     }
 }
@@ -288,6 +292,7 @@ margin-right: 7%;
 @media (max-width: 430px){
     body {
         resize: none;
+        max-width: 95%;
     }
     
 }
@@ -299,6 +304,7 @@ margin-right: 7%;
     align-self: center;
     border-radius: 50px;
     margin-top: 90px;
+    max-width: 95%;
 }
 
 .img_ad_banner_pastry {
@@ -354,19 +360,6 @@ margin-right: 7%;
     font-size: 1.5em;
     margin-bottom: 35px;
     margin-left: 15px;
-}
-@media (max-width: 740px){
-    .img_ad_banner_pastry {
-        max-width: 100vh;
-       
-    }
-}
-
-@media (max-width: 584px){
-    .img_ad_banner_pastry {
-        max-width: 80vh;
-        
-    }
 }
 
 @media (max-width: 430px){
