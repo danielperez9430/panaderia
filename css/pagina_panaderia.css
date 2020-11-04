@@ -435,14 +435,13 @@ margin-right: 7%;
 /* Login Page*/
 
 .formContainer {
-    margin-top: 70px;
     border-radius: 10px;    
-    height: calc(100vh - 100px);
+    height: calc(90vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .form { 
@@ -451,7 +450,8 @@ margin-right: 7%;
     background-color: #e7d9b28f;
     margin: auto;
     width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tab-form {
@@ -459,6 +459,10 @@ margin-right: 7%;
     flex-direction: column;
     margin-top: 0px;
     border: 1px solid rgb(128, 0, 0);   
+  }
+
+  .tab-content {
+      margin-bottom: 1px;
   }
 
 label {
@@ -659,7 +663,7 @@ margin-bottom: 20px;
 footer {
     width: 100%;
     background: #111;
-    margin-top: 1.5rem;
+    margin-top: auto;
     color: white;
     max-height: 100px;
     position: relative;
