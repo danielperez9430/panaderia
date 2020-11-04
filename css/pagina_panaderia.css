@@ -284,18 +284,14 @@ margin-right: 7%;
 }
 
 @media (max-width: 740px){
-    .img_ad_banner {
+    .img_ad_banner .img_ad_banner_pastry {
         max-width: 100vh;
         max-width: 95%;
-  
     }
 }
 
 @media (max-width: 584px){
-    .img_ad_banner {
- 
-        
-    }
+
 }
 
 @media (max-width: 430px){
@@ -317,9 +313,12 @@ margin-right: 7%;
 }
 
 .img_ad_banner_pastry {
-    border-radius: 30px;
+    border-radius: 10px;
     border-color: gold;
     border-style: solid;
+    align-self: center;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .img_ad_banner_pastry:hover {
