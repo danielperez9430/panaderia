@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    var menuStatus = 'hidden';
+    var menuStatus = 'display';
     document.getElementById('hambButton').addEventListener('click', () => {
         if (menuStatus == 'hidden') {
-            document.getElementById('hambMenu').setAttribute('class', 'hambMenu displayHambMenu');
+            $('#hambMenu').removeClass('hideHambMenu');
+            $('#mainContent').removeClass('mainContentHiddenMenu');
             menuStatus = 'display';
         }
         else if (menuStatus == 'display') {
-            document.getElementById('hambMenu').setAttribute('class', 'hambMenu');
+            $('#hambMenu').addClass('hideHambMenu');
+            $('#mainContent').addClass('mainContentHiddenMenu');
             menuStatus = 'hidden';
         }
     });

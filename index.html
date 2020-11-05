@@ -11,54 +11,59 @@
   <link rel="stylesheet" href="css/pagina_panaderia.css">
   <!-- Iconos Font Awesome--->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- CDN Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
 
   <header>
-    <i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
-    <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
-
-    <ul class="nav_links">
-      <li class="li_header"><a href="index.html" class="pag_actual">Inicio</a></li>
-      <li class="li_header"><a href="panaderia.html">Panadería</a></li>
-      <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
-      <li class="li_header"><a href="contacto.html">Contacto</a></li>
-    </ul>
-
-    <a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+    <div class="whiteArea"></div>
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+      <i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+      <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+      <span class="pageTitle">Inicio</span>
+      <div class="searchContainer"><input type="text" class="form-control" placeholder="Buscar"></div>
+      <a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+    </div>
   </header>
 
-  <div class="hambMenu" id="hambMenu">
-    <a class="itemMenu" href="index.html">Inicio</a>
-    <a class="itemMenu" href="panaderia.html">Panaderia</a>
-    <a class="itemMenu" href="pasteleria.html">Pasteleria</a>
-    <a class="itemMenu" href="contacto.html">Contacto</a>
+  <div class="hambMenu shadow p-3 mb-5 bg-white rounded" id="hambMenu">
+    <a class="itemMenu" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+    <a class="itemMenu" href="panaderia.html"><i class="fa fa-home" aria-hidden="true"></i>Panaderia</a>
+    <a class="itemMenu" href="pasteleria.html"><i class="fa fa-home" aria-hidden="true"></i>Pasteleria</a>
+    <a class="itemMenu" href="contacto.html"><i class="fa fa-home" aria-hidden="true"></i>Contacto</a>
   </div>
 
-
-  <div class="slider">
-    <ul class="ul_slider">
-      <li class="li_slider">
-        <img src="images/banner-1.webp" class="img_slider" />
-      </li>
-      <li class="li_slider">
-        <img src="images/banner-2.webp" class="img_slider" />
-      </li>
-      <li class="li_slider">
-        <img src="images/banner-3.webp" class="img_slider" />
-      </li>
-    </ul>
-  </div>
-
-  <div class="texto_index">
-    <h1>Nuestra Historia</h1>
-    <p class="p_index"><b>Nacimos durante el estado de alarma</b>, sabemos que fue un momento duro para todos, pero nosotros
-      nos pasamos toda la cuarentena en casa haciendo postres cuando se nos ocurrió lanzar Panaderías M.L., <b>queremos
-      reinventar la forma de estar más cerca de vosotros<b> sin estarlo. Todo ello cumpliendo las más estrictas normas de seguridad para
-      que recibáis todos nuestros producto con la mejor calidad y libre de cualquier agente infeccioso.</p>
-    <p class="p_index">En Panaderias M.L. <b>tenemos una gran pasión por nuestro pan, repostería y vuestra felicidad</b>. Todos
-      los días de nuestra tienda física y online sale un cliente satisfecho.</p>
+  <div class="bodyContainer">
+    <div class="mainContent" id="mainContent">
+      <div class="slider">
+        <ul class="ul_slider">
+          <li class="li_slider">
+            <img src="images/banner-1.webp" class="img_slider" />
+          </li>
+          <li class="li_slider">
+            <img src="images/banner-2.webp" class="img_slider" />
+          </li>
+          <li class="li_slider">
+            <img src="images/banner-3.webp" class="img_slider" />
+          </li>
+        </ul>
+      </div>
+    
+      <div class="texto_index">
+        <h1>Nuestra Historia</h1>
+        <p class="p_index"><b>Nacimos durante el estado de alarma</b>, sabemos que fue un momento duro para todos, pero nosotros
+          nos pasamos toda la cuarentena en casa haciendo postres cuando se nos ocurrió lanzar Panaderías M.L., <b>queremos
+          reinventar la forma de estar más cerca de vosotros<b> sin estarlo. Todo ello cumpliendo las más estrictas normas de seguridad para
+          que recibáis todos nuestros producto con la mejor calidad y libre de cualquier agente infeccioso.</p>
+        <p class="p_index">En Panaderias M.L. <b>tenemos una gran pasión por nuestro pan, repostería y vuestra felicidad</b>. Todos
+          los días de nuestra tienda física y online sale un cliente satisfecho.</p>
+      </div>
+    </div>
   </div>
 
   <footer>

@@ -20,27 +20,43 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 /* Header styles */
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    border-color: black;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 2px;
-    max-height: 70px;
     position: fixed;
     width: 100%;
-    background-color: white;
     z-index: 100;
+}
+
+header>.whiteArea {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    background-color:  white;
+}
+
+header>div:not(.whiteArea) {
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header>div>div.searchContainer {
+    width: 30%;
+    position: absolute;
+    right: 100px;
 }
 
 .li_header {
@@ -51,9 +67,14 @@ header {
 
 .logo {
     cursor: pointer;
-    margin-left: 5px;
-    width: 90px;
-    height: 90px;
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.pageTitle {
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 .nav_links .li_header {
@@ -69,7 +90,7 @@ header {
 }
 
 #hambButton {
-    display: none;
+    
     cursor: pointer;
     margin-left: 30px;
     font-size: 22px;
@@ -85,35 +106,45 @@ header {
     }
 }
 
-.hambMenu {
+div.hambMenu {
     position: fixed;
-    top: -180px;
+    top: 110px;
+    left: 10px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    z-index: 80;
-    background-color: white;
-    transition: 0.5s;
+    z-index: 100;
+    transition: 0.4s;
+    padding: 0 !important;
+    width: 300px;
 }
 
-.displayHambMenu {
-    top: 70px;
+div.hideHambMenu {
+    left: -400px;
 }
 
 .itemMenu {
     width: 100%;
     padding: 20px;
-    text-align: center;
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
+}
+
+.itemMenu>i {
+    margin-right: 10px;
+    font-size: 22px;
+    margin-left: 10px;
 }
 
 .itemMenu:hover {
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
 }
 
 .itemMenu:active {
     background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
 }
 
 .btn_login {
@@ -121,6 +152,8 @@ header {
     font-size: 30px;
     cursor: pointer;
     color: black;
+    position: absolute;
+    right: 10px;
 }
 
 .texto_index {
@@ -157,6 +190,25 @@ button:hover {
 }
   
 /* Slider styles*/
+
+.bodyContainer {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.mainContent {
+    width: calc(100% - 310px);
+    position: absolute;
+    left: 310px;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+
+.mainContentHiddenMenu {
+    left: 0px;
+    width: 100%;
+}
 
 .slider {
     width: 75%;
