@@ -298,10 +298,6 @@ margin-right: 7%;
     }
 }
 
-@media (max-width: 584px){
-
-}
-
 @media (max-width: 430px){
     body {
         resize: none;
@@ -536,7 +532,6 @@ input {
 @media (max-width: 740px){
     .form {
         max-width: 100vh;
-
     }
 }
 

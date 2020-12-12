@@ -10,8 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
             menuStatus = 'hidden';
         }
     });
-});
 
+
+    /** Media Query en JS para modificar el DOM en este caso */
+    var ventana = window;
+
+    ventana.addEventListener('resize', function (mql) {
+        var ancho_ventana = window.innerWidth; // Obtenemos el ancho actual de la ventana
+
+        if (ancho_ventana > 830) {
+            document.getElementById('hambMenu').setAttribute('class', 'hambMenu'); // Ocultamos el menu desplegable
+        }
+    });
+
+});
 
 
 
