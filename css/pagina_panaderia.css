@@ -450,7 +450,6 @@ margin-right: 7%;
 
 .formContainer {
     border-radius: 10px;
-    height: calc(90vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -692,6 +691,7 @@ footer {
     justify-content: center;
     align-items: center;
     background: #111;
+    margin-bottom: 0;
 }
 
 .footer_links .li_footer {

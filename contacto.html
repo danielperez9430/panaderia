@@ -24,29 +24,40 @@
 </head>
 
 <body>
-    <div class="container-flex">
-        <header>
-            <i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
-            <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
 
-            <ul class="nav_links px-2 mt-3">
-                <li class="li_header"><a href="index.html">Inicio</a></li>
-                <li class="li_header"><a href="panaderia.html">Panadería</a></li>
-                <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
-                <li class="li_header"><a href="blog.html">Blog</a></li>
-                <li class="li_header"><a href="contacto.html" class="pag_actual">Contacto</a></li>
-            </ul>
+	<div class="container-flex">
+		<header>
+			<i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+			<a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
 
-            <a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-        </header>
+			<ul class="nav_links px-2 mt-3">
+				<li class="li_header"><a href="index.html">Inicio</a></li>
+				<li class="li_header"><a href="panaderia.html">Panadería</a></li>
+				<li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+				<li class="li_header"><a href="blog.html">Blog</a></li>
+				<li class="li_header dropdown-submenu"><a id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false" href="#">Próximamente</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item btn disabled" href="">Tarjetas regalo</a></li>
+						<li><a class="dropdown-item btn disabled" href="">Pasteles con tu cara</a></li>
+					</ul>
+				</li>
+				<li class="li_header"><a href="contacto.html" class="pag_actual">Contacto</a></li>
+			</ul>
 
-        <div class="hambMenu" id="hambMenu">
-            <a class="itemMenu" href="index.html">Inicio</a>
-            <a class="itemMenu" href="panaderia.html">Panaderia</a>
-            <a class="itemMenu" href="pasteleria.html">Pasteleria</a>
-            <a class="itemMenu" href="blog.html">Blog</a>
-            <a class="itemMenu" href="contacto.html">Contacto</a>
-        </div>
+			<a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+		</header>
+
+		<div class="hambMenu" id="hambMenu">
+			<a class="itemMenu" href="index.html">Inicio</a>
+			<a class="itemMenu" href="panaderia.html">Panaderia</a>
+			<a class="itemMenu" href="pasteleria.html">Pasteleria</a>
+			<a class="itemMenu" href="blog.html">Blog</a>
+			<a class="itemMenu" id="desplegable" href="#">Próximamente</a>
+			<a class="itemMenu item-desplegable submenu btn disabled" href="" hidden>Tarjetas regalo</a>
+			<a class="itemMenu item-desplegable submenu btn disabled" href="" hidden>Pasteles con tu cara</a>
+			<a class="itemMenu pag_actual" id="item-final-menu" href="contacto.html">Contacto</a>
+		</div>
     </div>
 
     <div class="container post-fila mt-5 mr-0">

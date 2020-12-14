@@ -25,11 +25,17 @@
             <i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
             <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
 
-            <ul class="nav_links">
+            <ul class="nav_links px-2 mt-3">
                 <li class="li_header"><a href="index.html">Inicio</a></li>
                 <li class="li_header"><a href="panaderia.html">Panadería</a></li>
                 <li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
                 <li class="li_header"><a href="blog.html" class="pag_actual">Blog</a></li>
+                <li class="li_header dropdown-submenu"><a id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Próximamente</a>
+                    <ul class="dropdown-menu">
+						<li><a class="dropdown-item btn disabled" href="">Tarjetas regalo</a></li>
+						<li><a class="dropdown-item btn disabled" href="">Pasteles con tu cara</a></li>
+					</ul>
+                </li>
                 <li class="li_header"><a href="contacto.html">Contacto</a></li>
             </ul>
 
@@ -40,8 +46,11 @@
             <a class="itemMenu" href="index.html">Inicio</a>
             <a class="itemMenu" href="panaderia.html">Panaderia</a>
             <a class="itemMenu" href="pasteleria.html">Pasteleria</a>
-            <a class="itemMenu" href="blog.html">Blog</a>
-            <a class="itemMenu" href="contacto.html">Contacto</a>
+            <a class="itemMenu pag_actual" href="blog.html">Blog</a>
+            <a class="itemMenu" id="desplegable" href="#">Próximamente</a>
+            <a class="itemMenu item-desplegable submenu btn disabled" href="" hidden>Tarjetas regalo</a>
+            <a class="itemMenu item-desplegable submenu btn disabled" href="" hidden>Pasteles con tu cara</a>
+            <a class="itemMenu" id="item-final-menu" href="contacto.html">Contacto</a>
         </div>
     </div>
 
@@ -64,21 +73,23 @@
             <div class="col">
                 -<input type="range" id="barra-progreso" min="0" step="50" max="100" default="0" value="0">+
             </div>
-            <div class="col align-self-end">
-                <input class="input_busqueda" type="text" placeholder="Search" aria-label="Search">
-                <button type="button" class=" icono_busqueda btn-circle"><i class="fa fa-search"></i>
-
+            <div class="col align-self-end search">
+                <input type="text" class="input_busqueda" name="searchBox" id="searchBox" placeholder="Buscar...">
+                <i class="fa fa-search" aria-hidden="true"></i>
             </div>
         </div>
 
-        <p class="mt-4 texto_post">
+        <p class="mt-4 texto_post justify-content-center text-justify">
             Las navidades se acercan y con ellos nuestros sentimientos de estar más cerca de nuestros seres queridos,
             pero no tenemos que bajar la guardia sobre todos en estos momentos que están siendo los más duros. Desde
             Panaderías M.L. con el fin de haceros la vida un poco más fácil hemos decidido haceros una oferta especial
             este año.
         </p>
+
         <h1 class="display-5 mb-3 mt-2">DESCUENTOS DE HASTA UN 50%</h1>
-        <p class="my-4 texto_post">Descuentos en tiempos de crisis? Pues si, porque podemos ofrecer la mejor calidad de
+
+        <p class="my-4 texto_post justify-content-center text-justify">Descuentos en tiempos de crisis? Pues si, porque podemos
+            ofrecer la mejor calidad de
             siempre a
             todos nuestros
             clientes. Este año tendremos muchos dulces, postres y con entrega a domicilio para que no tengáis que
@@ -106,11 +117,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <p class="my-4 texto_post">Desde Panaderias M.L. os deseamos unas felices fiestas y un mejor año 2021 para todos
-            nuestros
-            cliente y no nos cansaremos de deciros <b>GRACIAS, GRACIAS y MUCHAS GRACIAS</b> por confiar en nosotros en
-            los
-            momentos más duros.</p>
+
+        <p class="my-4 texto_post justify-content-center text-justify">Desde Panaderias M.L. os deseamos unas felices fiestas y un
+            mejor año 2021 para todos nuestros cliente y no nos cansaremos de deciros <b>GRACIAS, GRACIAS y MUCHAS GRACIAS</b> por confiar en nosotros en
+            los momentos más duros.</p>
 
     </div>
 
@@ -139,6 +149,20 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-highlight@3.5.0/jquery.highlight.min.js"></script>
+
+    <script type="text/javascript">
+        /*Función que le hace highlight al texto que buscamos en el buscador*/
+        $(function () {
+            $('.input_busqueda').bind("keypress", (evento) => {
+
+                var elementoBuscar = $('.input_busqueda').val() + evento.key;
+
+                $('.texto_post').unhighlight(); // Eliminamos el highlight
+                $('.texto_post').highlight(elementoBuscar); // Destacamos el texto si es correcto
+            });
+        });
+    </script>
     <!-- Javascript Header -->
     <script src="js/responsive_header.js"></script>
     <script src="js/functions.js"></script>

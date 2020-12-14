@@ -5,35 +5,54 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-  <!-- Estilos página-->
-  <link rel="stylesheet" href="css/pagina_panaderia.css">
-  <!-- Iconos Font Awesome--->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Estilos página-->
+	<link rel="stylesheet" href="css/pagina_panaderia.css">
+	<link rel="stylesheet" href="css/panaderia_v2.css">
+	<!-- CSS Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous" />
+	<!-- Iconos Font Awesome--->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-	<header>
-		<i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
-		<a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+	<div class="container-flex">
+		<header>
+			<i class="fa fa-bars" aria-hidden="true" id="hambButton"></i>
+			<a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
 
-		<ul class="nav_links">
-			<li class="li_header"><a href="index.html">Inicio</a></li>
-			<li class="li_header"><a href="panaderia.html">Panadería</a></li>
-			<li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
-			<li class="li_header"><a href="contacto.html">Contacto</a></li>
-		</ul>
+			<ul class="nav_links px-2 mt-3">
+				<li class="li_header"><a href="index.html">Inicio</a></li>
+				<li class="li_header"><a href="panaderia.html">Panadería</a></li>
+				<li class="li_header"><a href="pasteleria.html">Pastelería</a></li>
+				<li class="li_header"><a href="blog.html">Blog</a></li>
+				<li class="li_header dropdown-submenu"><a id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false" href="#">Próximamente</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item btn disabled" href="">Tarjetas regalo</a></li>
+						<li><a class="dropdown-item btn disabled" href="">Pasteles con tu cara</a></li>
+					</ul>
+				</li>
+				<li class="li_header"><a href="contacto.html">Contacto</a></li>
+			</ul>
 
-		<a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-	</header>
+			<a class="btn_login" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+		</header>
 
-	<div class="hambMenu" id="hambMenu">
-		<a class="itemMenu" href="index.html">Inicio</a>
-		<a class="itemMenu" href="panaderia.html">Panaderia</a>
-		<a class="itemMenu" href="pasteleria.html">Pasteleria</a>
-		<a class="itemMenu" href="contacto.html">Contacto</a>
+		<div class="hambMenu" id="hambMenu">
+			<a class="itemMenu" href="index.html">Inicio</a>
+			<a class="itemMenu" href="panaderia.html">Panaderia</a>
+			<a class="itemMenu" href="pasteleria.html">Pasteleria</a>
+			<a class="itemMenu" href="blog.html">Blog</a>
+			<a class="itemMenu" id="desplegable" href="#">Próximamente</a>
+			<a class="itemMenu item-desplegable submenu btn disabled" href="" hidden>Tarjetas regalo</a>
+			<a class="itemMenu item-desplegable submenu btn disabled" href="" hidden>Pasteles con tu cara</a>
+			<a class="itemMenu" id="item-final-menu" href="contacto.html">Contacto</a>
+		</div>
 	</div>
 
-	<div class="formContainer">
+	<div class="formContainer container mb-5">
 		<div class="form">
 			<div class="tab-content">
 				<div id="signup">
@@ -99,17 +118,32 @@
 	</div>
 	<!-- /form -->
 
-	<footer>
-		<ul class="footer_links">
-			<li class="li_footer"><a href="politica_privacidad.html" class="a_footer">Política de privacidad</a></li>
-			<li class="li_footer"><a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a></li>
-			<li class="li_footer"><a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a>
-			</li>
-			<li class="li_footer">&copy; Panaderías M.L. 2020</li>
-		</ul>
-	</footer>
+    <footer class="footer mt-3>
+        <div class="container-fluid footer">
+            <ul class="list-unstyled list-inline text-center py-0">
+                <li class="list-inline-item">
+                    <a href="politica_privacidad.html" class="a_footer">Política de privacidad</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="politica_de_cookies.html" class="a_footer">Política de Cookies</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="politica_de_devoluciones.html" class="a_footer">Política de devoluciones</a>
+                </li>
+                <li class="list-inline-item">&copy; Panaderías M.L. 2020</li>
+            </ul>
+        </div>
+    </footer>
+
+	<!-- JavaScript Bundle with Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 	<script src="js/responsive_header.js"></script>
+	<script src="js/functions.js"></script>
 
 </body>
 

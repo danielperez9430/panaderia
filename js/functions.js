@@ -54,7 +54,7 @@ window.onload = function () {
     });
   }
 
-  /** Funcionalidad para el menu desplegable */
+  /** Funcionalidad para el submenu desplegable */
 
   $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
     if (!$(this).next().hasClass('show')) {
@@ -134,4 +134,5 @@ window.onload = function () {
     }
 
   }
+
 }
