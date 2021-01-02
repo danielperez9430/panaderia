@@ -58,7 +58,7 @@ const homepageProducts = {
 document.addEventListener('DOMContentLoaded', () => {
     menuManagement();
     createCarrousel();
-    createProducts();
+    // createProducts();
 });
 
 function menuManagement() {
