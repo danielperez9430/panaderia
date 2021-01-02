@@ -139,11 +139,13 @@ div.hideHambMenu {
 .itemMenu:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
+    text-decoration: none;
 }
 
 .itemMenu:active {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: .25rem;
+    text-decoration: none;
 }
 
 .btn_login {
@@ -223,7 +225,7 @@ button:hover {
     height: 150px;
 }
 
-#productsSection {
+.productsSection {
     margin-top: 50px;
     width: calc(100% - 90px);
     margin-right: 50px;
